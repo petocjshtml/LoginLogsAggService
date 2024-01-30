@@ -68,18 +68,10 @@ Tabuľku loginov môžete vyprázniť zavolaním metódy deleteAllLogins() v Log
 -----------------------------------------------------------------------------------------------
 
 # Ďalšia metóda testovania - CURL:
-môžte skúsiť, keď servis beží dať do príkazového riadka príkaz
+V kóde LoginLogsAggService.js máte okrem metód zakomentované aj platné CURL príkazy:
 
-pre jeden login:
-
-curl -X POST http://localhost:3000/login -H "Content-Type: application/json" -d "{\"ts\": 1706633516, \"ip\": \"87.244.221.47\"}"
-
-pre skupinu:
-
-curl -X POST http://localhost:3000/logins -H "Content-Type: application/json" -d "[{\"ts\": 1706633516, \"ip\": \"87.244.221.47\"}, {\"ts\": 1706633516, \"ip\": \"192.168.1.1\"}]"
-
-Pozor!!! , je potrebné zmeniť timestamp na aktuálny dátum -  ak nezmeníte timestamp na dnešný dátum,
-záznamy sa síce pridajú do databázy, ale v tabuľke html sa nezobrazia, pretože tá zobrazuje iba štatisiky agregácie pre aktuálny deň !
+Pozor!!! , vždy je potrebné zmeniť timestamp na aktuálny dátum, pretože inák sa záznamy síce pridajú do databázy, 
+ale v tabuľke html sa nezobrazia, pretože tá zobrazuje iba štatisiky agregácie pre aktuálny deň !
 
 -----------------------------------------------------------------------------------------------
 # Testovanie servisu
