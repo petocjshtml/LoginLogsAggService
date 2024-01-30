@@ -69,6 +69,7 @@ Tabuľku loginov môžete vyprázniť zavolaním metódy deleteAllLogins() v Log
 
 # Ďalšia metóda testovania - CURL:
 môžte skúsiť, keď servis beží dať do príkazového riadka príkaz
+
 pre jeden login:
 
 curl -X POST http://localhost:3000/login -H "Content-Type: application/json" -d "{\"ts\": 1706633516, \"ip\": \"87.244.221.47\"}"
