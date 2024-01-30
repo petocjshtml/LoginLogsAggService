@@ -4,7 +4,7 @@ const statistics = require('./Statistics');
 
 router.get('/', async (req, res) => {
   try {
-    const data = await statistics.getLoginsByDate('2024-01-30');
+    const data = await statistics.getLoginsByDate(new Date(Date.now()).toISOString().split('T')[0]);
     console.log(data);
     const tableHtml = generateTableHtml(data);
     res.send(tableHtml);
@@ -13,7 +13,6 @@ router.get('/', async (req, res) => {
     res.status(500).send('Chyba pri načítavaní údajov pre tabuľku');
   }
 });
-console.log(new Date(Date.now()).toISOString().split('T')[0]);
 function generateTableHtml(data) {
   const tableHtml = `
     <html>
