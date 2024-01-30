@@ -34,12 +34,13 @@ a následne ho upraví pre štatistické zobrazenie vo formáte, ktorý my potre
 { date: '2024-01-30', country: 'GB' },
 ...atď.
 ]
-
+...
 V súbore Statistics.js bola vytvorená metóda getLoginsByDate(specificDate){...},
 ktorej na vstupe je dátum a táto metóda umožňuje z databázy vybrať objekty prihlásenia
 s aktualizovaným dátumom a pre tento dátum spraviť štatistický rozbor tak, že objekty upraví
 na požadovanú rozborovú formu a roztriedi prihlásenia podľa početnosti pre každú krajinu 
 a usporiada ich od najúspešnejšieho pre daný deň:
+
 [
 { date: '2024-01-30', order: 3, country: 'CN', logins: 10},
 { date: '2024-01-30', order: 4, country: 'JP', logins: 9 },
@@ -49,6 +50,7 @@ a usporiada ich od najúspešnejšieho pre daný deň:
 { date: '2024-01-30', order: 8, country: 'DE', logins: 5 },
 ...atď.
 ]
+
 Takto usporiadané objekty si môžte pozrieť v html tabuľke na základnom endpointe http://localhost:3000/
 -----------------------------------------------------------------------------------------------
 Pridávanie loginov môžete otestovať pomocou vytvorených dummy metód v LoginService.js
