@@ -56,11 +56,11 @@ Takto usporiadané objekty si môžte pozrieť v html tabuľke na základnom end
 
 Pridávanie loginov môžete otestovať pomocou vytvorených dummy metód v LoginService.js
 V súbore LoginLogsAggService.js môžte odkomentovať tieto riadky:
-loginService.testSingleLogin(); 
-loginService.testMultipleLogins(2);)
-testSingleLogin() - slúži na pridanie jedného random loginu
-testMultipleLogins(102) - slúži na pridanie random poľa loginov - veľkosť poľa udávate vstupným číslom do funkcie
-//ak takto zmeníte a zkompilujete kód, malo by sa vám vložiť do databázy 102 random loginov + 1 random login
+# loginService.testSingleLogin(); 
+# loginService.testMultipleLogins(2);
+# testSingleLogin() - slúži na pridanie jedného random loginu
+# testMultipleLogins(102) - slúži na pridanie random poľa loginov - veľkosť poľa udávate vstupným číslom do funkcie
+# ak takto zmeníte a zkompilujete kód, malo by sa vám vložiť do databázy 102 random loginov + 1 random login
 
 -----------------------------------------------------------------------------------------------
 Tabuľku loginov môžete vyprázniť zavolaním metódy deleteAllLogins() v LoginLogsAggService.js
