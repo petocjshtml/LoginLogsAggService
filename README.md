@@ -68,7 +68,9 @@ Tabuľku loginov môžete vyprázniť zavolaním metódy deleteAllLogins() v Log
 -----------------------------------------------------------------------------------------------
 
 # Ďalšia metóda testovania - CURL:
-V kóde LoginLogsAggService.js máte okrem metód zakomentované aj platné CURL príkazy:
+V tomto súbore máte okrem testovacích metód zakomentované aj platné CURL príkazy (132 riadok):
+
+https://github.com/petocjshtml/LoginLogsAggService/blob/main/project-root/LoginLogsAggService.js
 
 Pozor!!! , vždy je potrebné zmeniť timestamp na aktuálny dátum, pretože inák sa záznamy síce pridajú do databázy, 
 ale v tabuľke html sa nezobrazia, pretože tá zobrazuje iba štatisiky agregácie pre aktuálny deň !
