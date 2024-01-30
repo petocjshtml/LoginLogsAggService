@@ -75,7 +75,7 @@ pre skupinu:
 Pozor!!! , je potrebné zmeniť timestamp na aktuálny dátum -  ak nezmeníte timestamp na dnešný dátum,
 záznamy sa síce pridajú do databázy, ale v tabuľke html sa nezobrazia, pretože tá zobrazuje iba štatisiky agregácie pre aktuálny deň !
 -----------------------------------------------------------------------------------------------
-# TEstovanie servisu
+# Testovanie servisu
 - Zostrojte si a vyskúšajte platné príkazy CURL
 - V prípade potrebu vymažte databázu loginov pomocou deleteAllLogins()
 - Pošlite si post requesty s údajmi na overenie endpointov
