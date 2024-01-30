@@ -12,7 +12,7 @@ cd LoginLogsAggService\project-root
 
 # 3. Spustíte projekt cez docker pomocou príkazu:
 docker-compose up --build
-(je potrebné mať spustený docker pri tomto kroku)
+# (je potrebné mať spustený docker pri tomto kroku)
 
 -------------------------------------------------------------------------
 
