@@ -64,6 +64,7 @@ V súbore LoginLogsAggService.js môžte odkomentovať tieto riadky:
 
 -----------------------------------------------------------------------------------------------
 Tabuľku loginov môžete vyprázniť zavolaním metódy deleteAllLogins() v LoginLogsAggService.js
+
 -----------------------------------------------------------------------------------------------
 
 # Ďalšia metóda testovania - CURL:
@@ -74,6 +75,7 @@ pre skupinu:
 # curl -X POST http://localhost:3000/logins -H "Content-Type: application/json" -d "[{\"ts\": 1706633516, \"ip\": \"87.244.221.47\"}, {\"ts\": 1706633516, \"ip\": \"192.168.1.1\"}]"
 Pozor!!! , je potrebné zmeniť timestamp na aktuálny dátum -  ak nezmeníte timestamp na dnešný dátum,
 záznamy sa síce pridajú do databázy, ale v tabuľke html sa nezobrazia, pretože tá zobrazuje iba štatisiky agregácie pre aktuálny deň !
+
 -----------------------------------------------------------------------------------------------
 # Testovanie servisu
 - Zostrojte si a vyskúšajte platné príkazy CURL
