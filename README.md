@@ -53,6 +53,7 @@ a usporiada ich od najúspešnejšieho pre daný deň:
 
 Takto usporiadané objekty si môžte pozrieť v html tabuľke na základnom endpointe http://localhost:3000/
 -----------------------------------------------------------------------------------------------
+
 Pridávanie loginov môžete otestovať pomocou vytvorených dummy metód v LoginService.js
 V súbore LoginLogsAggService.js môžte odkomentovať tieto riadky:
 loginService.testSingleLogin(); 
@@ -60,15 +61,17 @@ loginService.testMultipleLogins(2);)
 testSingleLogin() - slúži na pridanie jedného random loginu
 testMultipleLogins(102) - slúži na pridanie random poľa loginov - veľkosť poľa udávate vstupným číslom do funkcie
 //ak takto zmeníte a zkompilujete kód, malo by sa vám vložiť do databázy 102 random loginov + 1 random login
+
 -----------------------------------------------------------------------------------------------
 Tabuľku loginov môžete vyprázniť zavolaním metódy deleteAllLogins() v LoginLogsAggService.js
 -----------------------------------------------------------------------------------------------
+
 # Ďalšia metóda testovania - CURL:
 môžte skúsiť, keď servis beží dať do príkazového riadka príkaz
 pre jeden login:
-curl -X POST http://localhost:3000/login -H "Content-Type: application/json" -d "{\"ts\": 1706633516, \"ip\": \"87.244.221.47\"}"
+# curl -X POST http://localhost:3000/login -H "Content-Type: application/json" -d "{\"ts\": 1706633516, \"ip\": \"87.244.221.47\"}"
 pre skupinu:
-curl -X POST http://localhost:3000/logins -H "Content-Type: application/json" -d "[{\"ts\": 1706633516, \"ip\": \"87.244.221.47\"}, {\"ts\": 1706633516, \"ip\": \"192.168.1.1\"}]"
+# curl -X POST http://localhost:3000/logins -H "Content-Type: application/json" -d "[{\"ts\": 1706633516, \"ip\": \"87.244.221.47\"}, {\"ts\": 1706633516, \"ip\": \"192.168.1.1\"}]"
 Pozor!!! , je potrebné zmeniť timestamp na aktuálny dátum -  ak nezmeníte timestamp na dnešný dátum,
 záznamy sa síce pridajú do databázy, ale v tabuľke html sa nezobrazia, pretože tá zobrazuje iba štatisiky agregácie pre aktuálny deň !
 -----------------------------------------------------------------------------------------------
